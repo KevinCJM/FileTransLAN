@@ -5,9 +5,9 @@
 @Author: Kevin-Chen
 @Descriptions: 局域网文件传输工具 (在两台运行本程序的电脑之间端对端传输各类文件)
 """
-
-import tkinter as tk
 from tkinter import ttk, filedialog, messagebox, simpledialog
+from tkinter import PhotoImage
+import tkinter as tk
 import socket
 import threading
 import os
@@ -554,5 +554,11 @@ class SimpleFileTransfer:
 
 if __name__ == "__main__":
     root = tk.Tk()
+
+    # 设置自定义图标
+    icon_path = "logo.png"  # 你上传的图标文件
+    icon_image = PhotoImage(file=icon_path)
+    root.iconphoto(True, icon_image)
+
     app = SimpleFileTransfer(root)
     root.mainloop()
