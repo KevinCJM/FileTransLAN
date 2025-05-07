@@ -1,2 +1,4 @@
 # 忽略 .idea 配置文件（PyCharm 或 JetBrains 系列 IDE 自动生成）
 .idea/
+
+saved_ips.json
